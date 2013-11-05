@@ -1,6 +1,9 @@
-Question: Do you like pigs?
-Poll:
-- Yes!
-- No
-- Maybe?
-- WHAT?!
+database.address:
+database.name: localhost
+database.port: 3306
+database.username: root
+database.password: password
+database.prefix: ""
+
+channel.general.format: [{channel}] {nation}{town} {prefix} {title}{player}{surname}: {chatcolor}{suffix}{msg}
+channel.moderator.format: [{channel}] {player}: {chatcolor}{msg}
