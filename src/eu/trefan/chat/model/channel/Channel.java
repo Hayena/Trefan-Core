@@ -9,10 +9,6 @@ public class Channel {
 	protected String tag;
 	protected ArrayList<Player> members = new ArrayList<Player>();
 	
-	public Channel(String name) {
-		this.name = name;
-	}
-	
 	public Channel(String name, String tag) {
 		this.name = name;
 		this.tag = tag;

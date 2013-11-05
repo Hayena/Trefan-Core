@@ -9,15 +9,15 @@ public class Private extends Channel {
 	protected boolean isProtected;
 	protected String password;
 	
-	public Private(String name, Player owner) {
-		super(name);
+	public Private(String name, String tag, Player owner) {
+		super(name, tag);
 		this.owner = owner;
 		isProtected = false;
 		super.addMember(owner);
 	}
 	
-	public Private(String name, Player owner, String password) {
-		super(name);
+	public Private(String name, String tag, Player owner, String password) {
+		super(name, tag);
 		this.owner = owner;
 		this.password = password;
 		isProtected = true;

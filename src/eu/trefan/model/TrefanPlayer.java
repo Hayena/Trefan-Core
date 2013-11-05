@@ -39,4 +39,12 @@ public class TrefanPlayer {
 		else
 			throw new Exception("Key does not exist");
 	}
+	
+	public static boolean exists(String name) {
+		return false;
+	}
+	
+	public static void create(String name) {
+		
+	}
 }

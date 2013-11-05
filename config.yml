@@ -1,5 +1,5 @@
-database.address:
-database.name: localhost
+database.address: localhost
+database.name: minecraft
 database.port: 3306
 database.username: root
 database.password: password

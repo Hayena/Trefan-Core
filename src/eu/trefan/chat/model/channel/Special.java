@@ -6,8 +6,8 @@ public class Special extends Channel {
 
 	protected String permissionNode;
 	
-	public Special(String name, String permissionNode) {
-		super(name);
+	public Special(String name, String tag, String permissionNode) {
+		super(name, tag);
 		this.permissionNode = permissionNode;
 	}
 	
