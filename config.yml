@@ -1,9 +1,0 @@
-database.address: localhost
-database.name: minecraft
-database.port: 3306
-database.username: root
-database.password: password
-database.prefix: ""
-
-channel.general.format: [{channel}] {prefix} {title}{player}{surname}: {chatcolor}{suffix}{msg}
-channel.moderator.format: [{channel}] {player}: {chatcolor}{msg}

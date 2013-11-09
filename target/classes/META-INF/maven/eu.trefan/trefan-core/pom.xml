@@ -2,7 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>eu.trefan</groupId>
   <artifactId>trefan-core</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1</version>
+  <url>http://trefan.eu</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
