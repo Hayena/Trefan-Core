@@ -10,19 +10,43 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<distributionManagement>
-		<repository>
-			<id>eu.trefan</id>
-			<url>http://192.168.0.112:8081/artifactory/libs-release-local</url>
-		</repository>
-	</distributionManagement>
-
 	<repositories>
 		<repository>
 			<id>bukkit-repo</id>
 			<url>http://repo.bukkit.org/content/groups/public</url>
 		</repository>
+		<repository>
+			<id>central</id>
+			<url> http://localhost:8081/artifactory/libs-release </url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>snapshots</id>
+			<url> http://localhost:8081/artifactory/libs-snapshot </url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
 	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>central</id>
+			<url> http://localhost:8081/artifactory/plugins-release </url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>snapshots</id>
+			<url> http://localhost:8081/artifactory/plugins-snapshot </url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<dependencies>
 		<dependency>
