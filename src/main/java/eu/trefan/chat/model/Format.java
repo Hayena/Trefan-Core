@@ -2,8 +2,8 @@ package eu.trefan.chat.model;
 
 import org.bukkit.entity.Player;
 
-import de.bananaco.bpermissions.api.ApiLayer;
-import de.bananaco.bpermissions.api.CalculableType;
+//import de.bananaco.bpermissions.api.ApiLayer;
+//import de.bananaco.bpermissions.api.CalculableType;
 
 import eu.trefan.chat.model.channel.Channel;
 
@@ -28,10 +28,10 @@ public class Format {
 	}
 	
 	private static String getInfo(Player p, String info) {
-		String value = ApiLayer.getValue(p.getWorld().getName(), CalculableType.USER, p.getName(), info);
-		if(value == null || value.equals(""))
+		//String value = ApiLayer.getValue(p.getWorld().getName(), CalculableType.USER, p.getName(), info);
+		//if(value == null || value.equals(""))
 			return "";
-		return colorFormat(value);
+		//return colorFormat(value);
 	}
 	
 	private static String colorFormat(String format) {
