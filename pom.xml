@@ -5,15 +5,25 @@
 	<artifactId>trefan-core</artifactId>
 	<version>0.1</version>
 	<url>http://trefan.eu</url>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>eu.trefan</id>
+			<url>http://192.168.0.112:8081/artifactory/libs-release-local</url>
+		</repository>
+	</distributionManagement>
+
 	<repositories>
 		<repository>
 			<id>bukkit-repo</id>
 			<url>http://repo.bukkit.org/content/groups/public</url>
 		</repository>
 	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -29,7 +39,6 @@
 			<type>jar</type>
 			<optional>true</optional>
 		</dependency>
-
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>craftbukkit</artifactId>
@@ -39,6 +48,7 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<defaultGoal>install</defaultGoal>
 		<sourceDirectory>${basedir}/src/main/java/</sourceDirectory>
