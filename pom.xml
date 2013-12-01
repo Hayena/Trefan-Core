@@ -78,6 +78,14 @@
 			<type>jar</type>
 			<optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>com.palmergames.bukkit.towny</groupId>
+			<artifactId>craftbukkit</artifactId>
+			<version>1.2.4</version>
+			<scope>compile</scope>
+			<type>jar</type>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 
 	<build>
