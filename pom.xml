@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.trefan</groupId>
 	<artifactId>trefan-core</artifactId>
-	<version>0.1</version>
+	<version>0.2</version>
 	<url>http://trefan.eu</url>
 
 	<properties>
