@@ -11,6 +11,11 @@ public class Special extends Channel {
 		this.permissionNode = permissionNode;
 	}
 	
+	public Special(String name, String tag, String permissionNode, String format) {
+		this(name, tag, permissionNode);
+		this.format = format;
+	}
+	
 	@Override
 	public void addMember(Player player) {
 		if(player.hasPermission(permissionNode)) {

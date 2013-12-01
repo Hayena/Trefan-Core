@@ -1,6 +1,6 @@
-name: 
-main: 
-version: 
+name: Trefan-Core
+main: eu.trefan.Core
+version: 0.1
 website: http://trefan.eu
 author: Hayena
-description:
+description: Main plugin for Trefan

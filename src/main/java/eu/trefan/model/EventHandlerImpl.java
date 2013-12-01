@@ -10,11 +10,6 @@ public class EventHandlerImpl implements Listener {
 	
 	@EventHandler
 	public void onLogin(PlayerLoginEvent event) {
-		String name = event.getPlayer().getDisplayName();
-		if(TrefanPlayer.exists(name)) {
-			
-		} else {
-			TrefanPlayer.create(name);
-		}
+
 	}
 }

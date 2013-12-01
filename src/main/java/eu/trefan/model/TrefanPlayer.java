@@ -2,49 +2,35 @@ package eu.trefan.model;
 
 import java.util.HashMap;
 
+import eu.trefan.chat.model.channel.Channel;
+
 public class TrefanPlayer {
 
 	private final int id;
+	private Channel currentChannel;
+	
 	
 	protected String name;
 	
 	HashMap<String, String> attributes = new HashMap<String, String>();
 	
-	public TrefanPlayer(int id, String name) {
+	public TrefanPlayer(int id, String name, Channel channel) {
 		this.id = id;
 		this.name = name;
+		currentChannel = channel;
 	}
 	
 	public int getId() {
 		return id;
 	}
 	
-	public String getAttribute(String key) throws Exception {
-		if(attributes.containsKey(key))
-			return attributes.get(key);
-		else
-			throw new Exception("No such attribute");
+	public void setChannel(Channel channel) {
+		this.currentChannel = channel;
 	}
 	
-	public void addAttribute(String key, String value) throws Exception {
-		if(attributes.containsKey(key))
-			throw new Exception("Key already exists");
-		else
-			attributes.put(key, value);
+	public Channel getChannel() {
+		return currentChannel;
 	}
 	
-	public void setAttribute(String key, String value) throws Exception {
-		if(attributes.containsKey(key))
-			attributes.put(key, value);
-		else
-			throw new Exception("Key does not exist");
-	}
 	
-	public static boolean exists(String name) {
-		return false;
-	}
-	
-	public static void create(String name) {
-		
-	}
 }
