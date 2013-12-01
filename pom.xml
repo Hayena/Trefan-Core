@@ -29,6 +29,13 @@
 				<enabled>false</enabled>
 			</releases>
 		</repository>
+		<repository>
+			<id>external</id>
+			<url>http://maven.trefan.eu/artifactory/ext-release-local </url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
 	</repositories>
 
 	<pluginRepositories>
