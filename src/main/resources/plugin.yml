@@ -4,3 +4,8 @@ version: 0.1
 website: http://trefan.eu
 author: Hayena
 description: Main plugin for Trefan
+commands:
+  chat:
+    description: Todo -> Description
+    aliases: [c]
+    useage: /chat
