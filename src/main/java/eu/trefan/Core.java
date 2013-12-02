@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import eu.trefan.chat.ChatCommandHandler;
 import eu.trefan.chat.ChatManager;
 import eu.trefan.chat.model.ChatEventHandler;
+import eu.trefan.model.MainEventHandler;
 import eu.trefan.model.TrefanPlayer;
 
 
@@ -27,6 +28,7 @@ public class Core extends JavaPlugin {
 		this.getCommand("chat").setExecutor(new ChatCommandHandler(chatManager));
 		
 		getServer().getPluginManager().registerEvents(new ChatEventHandler(chatManager), this);
+		getServer().getPluginManager().registerEvents(new MainEventHandler(this), this);
 	}
 	
 	public void addPlayer(Player player) {

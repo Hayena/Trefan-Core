@@ -36,5 +36,6 @@ public class ChatEventHandler implements Listener {
 		Player player = event.getPlayer();
 		Channel channel = chatManager.getPlayerChannel(player.getName());
 		channel.sendMessage(player, event.getMessage());
+		event.setCancelled(false);
 	}
 }
